@@ -3,7 +3,7 @@
     <title>Day-5</title>
   </head>
   <body>
-    <div id= "color-div"></div>
+    <div onclick="handleClick()" id= "color-div"></div>
   </body>
     <script>
       //   var a = 1;
@@ -49,6 +49,18 @@
     element.style.width = '200px';
     element.style.height = '300px';
     element.style. background = 'red';
+    element.style.cursor = 'pointer';
+
+    console.log(Math.random() * colors.length);
+
+
+function handleClick() {
+let colors = ['red', 'green', 'blue', 'yellow','purple'];
+
+let randomColor= colors[Math.floor(Math.random()* colors.length)];
+element.style.background=randomColor;
+}
+
     console.log(element);
 
     </script>
