@@ -2,8 +2,9 @@
   <head>
     <title>Day-5</title>
   </head>
-  <body>
-    <div onclick="handleClick()" id= "color-div"></div>
+  <body id="aayush">
+    <div onclick="handleClick()" id= "color-div">
+    </div>
   </body>
     <script>
       //   var a = 1;
@@ -44,19 +45,21 @@
     //   for (var i = 0; i <= 3; i++) {
     //     console.log(colors[i]);
     //   }
+let whole = document.getElementById('aayush');
+whole.style.background ='black';
 
     var element = document.getElementById("color-div");
-    element.style.width = '200px';
+    element.style.width = '200px'; 
     element.style.height = '300px';
     element.style. background = 'red';
-    element.style.cursor = 'pointer';
+    element.style.cursor ='pointer';
 
     console.log(Math.random() * colors.length);
 
 
 function handleClick() {
 let colors = ['red', 'green', 'blue', 'yellow','purple'];
-
+ 
 let randomColor= colors[Math.floor(Math.random()* colors.length)];
 element.style.background=randomColor;
 }
@@ -65,4 +68,4 @@ element.style.background=randomColor;
 
     </script>
   </body>
-</html>
+  </html>

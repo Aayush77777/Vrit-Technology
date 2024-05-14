@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <body>
+      <div id="bulb-container">
+    </div>
+    <button onclick="onLight()">on</button>
+    <button onclick="offLight()">off</button>
+
+      <script>
+        //         if(true){
+        //             let a=1;
+        //             console.log('inside if', a);
+        //         }
+        //    function check () {
+        //     let a=1;
+        //     console.log('inside if', a);
+        //    }
+        //    console.log('inside function', a);
+
+        // for (let i = 0; i < 10; i++) {
+        //   console.log(i);
+        // }
+
+        // setTimeout(() => {
+        //   alert("This is me!!");
+        // }, 2000);
+
+        // for(let i=0; i<10; i++) {
+        //     console.log(i);
+        // }
+        // set
+
+        function onLight() {
+          let bulbContainer = document.getElementById("bulb-container");
+          let imageTag = document.createElement("img");
+          bulbContainer.innerHTML = '';
+
+          imageTag.src = "2.png";
+          console.log("bulbcontainer", bulbContainer);
+          bulbContainer.appendChild(imageTag);
+        }
+
+        function offLight() {
+            let bulbContainer = document.getElementById("bulb-container");
+          let imageTag = document.createElement("img");
+          bulbContainer.innerHTML = '';
+
+          imageTag.src = "1.png";
+          console.log("bulbcontainer", bulbContainer);
+          bulbContainer.appendChild(imageTag);        }
+      </script>
+    </body>
+  </head>
+</html>
