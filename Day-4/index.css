@@ -1,12 +1,94 @@
+body {
+  background-color: #e3e3e3;
+width: 100%;
+font-family: sans-serif;
+}
+
+
 
 .card {
-    width: 200px;
-    height: 200px;
-    background-color: white;
+  width: 60%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  height: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top:100px;
 }
 
-.internal{
-    width: 15px;
-    height: 100px;
-   border: 1px solid black;
+.login-form {
+  width: 50%;
+  /* height: 100px; */
+  height: 100%;
+  border-right: 1px solid black;
 }
+.hero-banner {
+  width: 50%;
+  /* height: 100px; */
+  height: 100%;
+}
+
+
+.login-container {
+margin-top: 40px;
+margin-left: 40px;
+}
+
+.google-btn {
+  width: 350px;
+  height:30px ;
+  border: 1px solid #e3e3e3;
+  border-radius: 60px;
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.google-btn img {
+margin-right: 10px;
+/* filter: blur(2px); */
+filter: contrast(150%), brightness(120%);
+  
+}
+
+hr {
+  width: 200px;
+}
+
+.line {
+  color: #e3e3e3;
+  display: flex;
+  width: 70%;
+  position: relative;
+  top: 40px;
+  left: 44.9px;
+}
+
+
+.or-sec {
+/* font-weight: bold; */
+color: black;
+}
+
+.or-sec:before {
+  content: "";
+  color: #e3e3e3;
+  margin: 0 10px;
+}
+
+.or-sec:after {
+  content: "";
+  color: #e3e3e3;
+  margin: 0 10px;
+}
+
+.input-sec {
+  position: relative;
+  top:50px;
+  height: 100px;
+  width: 100px;
+}
+
